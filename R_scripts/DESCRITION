@@ -1,0 +1,13 @@
+Package: roche454QAReport
+Version: 0.1-1
+Date: 2010-04-01
+Title: Roche 454 Quality Report
+Author: Zev N. Kronenberg <jewbaru@gmail.com>, with
+  contributions from Matt Settles <msettles@uidaho.edu>.
+Maintainer: Matt Settles <msettles@uidaho.edu>
+Depends: R (>= 2.9.2), ShortRead, xtable, Biobase 
+Suggests: 
+Description: This package was developed to take quality and sequence data input from ShortRead and create a QA report. The output from this package is a pdf with essential information on the quality of your Roche 454 run. 
+License: GPL (>= 2)
+URL: http://www.r-project.org, http://www.another.url
+

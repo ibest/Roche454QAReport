@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file is used by 454's downstream analysis software 
+ to identify this directory as containing 454 processing results.
+ This file is required and must stay in the directory containing the "sff" subdirectory. 
+  e.g. R_2008_06_10_.../D_2008_06_10.../454DataProcessingDir.xml
+-->
+<454DataProcessingDir/>
+

@@ -1,0 +1,927 @@
+
+/***************************************************************************
+**
+**	454 Life Sciences Corporation
+**
+**	Software Release: 2.3
+**
+**	Runtime Metrics Results
+**
+**	Run Name:	R_2009_11_24_12_47_38_FLX12080456_Administrator_Eva_BreeShotgun
+**	Analysis Name: D_2009_12_01_21_11_02_compute-0-1_fullProcessing
+**	Region Name:   All
+**	Key Sequence:  All
+**
+**	File Created:  2009/11/24 12:47:38
+**
+***************************************************************************/
+
+softwareVersion
+{
+	softwareVersionTag = "2.3";
+}
+	
+/*
+**	Run Conditions
+*/
+runConditions
+{
+	dateOfFile = "2009/11/24 12:47:38";
+
+	runName      = "R_2009_11_24_12_47_38_FLX12080456_Administrator_Eva_BreeShotgun";
+	analysisName = "D_2009_12_01_21_11_02_compute-0-1_fullProcessing";
+
+	PTPType      = "unknown";
+	PTPBarCode   = "725457";
+	analysisType = "<analysisType goes here>";
+
+	numberOfRegions = 2;
+	numberOfCycles  = -1;
+
+	flowOrder = "<flowOrder goes here>";
+}
+
+/*
+**	Region '1'
+*/
+region
+{
+	name = "1";
+	
+	rawWells     = 841469;
+	keyPassWells = 830916;
+	
+	/*
+	**	Key 'CATG'
+	*/
+	key
+	{
+		keySequence  = "CATG";
+		keyPassWells = 10725;
+	
+		/*
+		**	Values are:
+		**
+		**	Average, Standard Deviation
+		*/
+		keySignalPerBase = 297.465000, 119.039000;
+		
+		ppi1 = 382.094000, 123.317000;
+		ppi2 = 278.609000, 63.901200;
+		ppi3 = 230.154000, 51.588600;
+		
+		singletA = 0.992496, 0.157084;
+		singletT = 0.987863, 0.137912;
+		singletG = 1.010900, 0.155393;
+		singletC = 1.012750, 0.147201;
+	
+		singletN = 1.002180, 0.150039;
+		
+		/*
+		**	Sequence Metrics for Templates
+		*/
+		matchSequenceMetrics
+		{
+			/*
+			**  Sequence 'all'
+			*/
+			sequence
+			{
+				name = "all";
+				
+				/*
+				**  Values are:
+				**
+				**  Accuracy, Length, Percent of keypass, Number of wells
+				*/
+				wellsAtQuality = 100.000000, 100, 73.268065, 7858;
+				wellsAtQuality = 99.000000, 100, 82.909091, 8892;
+				wellsAtQuality = 98.000000, 100, 85.948718, 9218;
+				wellsAtQuality = 95.000000, 100, 89.006993, 9546;
+				wellsAtQuality = 80.000000, 100, 93.641026, 10043;
+
+				wellsAtQuality = 100.000000, 150, 70.433566, 7554;
+				wellsAtQuality = 99.000000, 150, 80.829837, 8669;
+				wellsAtQuality = 98.000000, 150, 85.314685, 9150;
+				wellsAtQuality = 95.000000, 150, 88.000000, 9438;
+				wellsAtQuality = 80.000000, 150, 92.895105, 9963;
+
+				wellsAtQuality = 100.000000, 200, 66.955711, 7181;
+				wellsAtQuality = 99.000000, 200, 80.988345, 8686;
+				wellsAtQuality = 98.000000, 200, 83.664336, 8973;
+				wellsAtQuality = 95.000000, 200, 86.937063, 9324;
+				wellsAtQuality = 80.000000, 200, 92.531469, 9924;
+
+				wellsAtQuality = 100.000000, 250, 54.815851, 5879;
+				wellsAtQuality = 99.000000, 250, 75.888112, 8139;
+				wellsAtQuality = 98.000000, 250, 81.752914, 8768;
+				wellsAtQuality = 95.000000, 250, 85.566434, 9177;
+				wellsAtQuality = 80.000000, 250, 91.617716, 9826;
+
+				wellsAtQuality = 100.000000, 300, 33.715618, 3616;
+				wellsAtQuality = 99.000000, 300, 71.468531, 7665;
+				wellsAtQuality = 98.000000, 300, 78.508159, 8420;
+				wellsAtQuality = 95.000000, 300, 84.233100, 9034;
+				wellsAtQuality = 80.000000, 300, 90.843823, 9743;
+
+				wellsAtQuality = 100.000000, 350, 27.198135, 2917;
+				wellsAtQuality = 99.000000, 350, 60.419580, 6480;
+				wellsAtQuality = 98.000000, 350, 70.303030, 7540;
+				wellsAtQuality = 95.000000, 350, 79.822844, 8561;
+				wellsAtQuality = 80.000000, 350, 89.752914, 9626;
+
+				wellsAtQuality = 100.000000, 400, 17.426573, 1869;
+				wellsAtQuality = 99.000000, 400, 55.002331, 5899;
+				wellsAtQuality = 98.000000, 400, 64.447552, 6912;
+				wellsAtQuality = 95.000000, 400, 75.841492, 8134;
+				wellsAtQuality = 80.000000, 400, 88.596737, 9502;
+			}
+			/*
+			**	Sequence 'AVTF100'
+			*/
+			sequence
+			{
+				name = "AVTF100";
+
+				/*
+				**	Values are:
+				**
+				**	Accuracy, Length, Percent of mapped, Number of wells
+				*/
+				wellsAtQuality = 100.000000, 100, 79.616549, 1578;
+				wellsAtQuality = 99.000000, 100, 87.184662, 1728;
+				wellsAtQuality = 98.000000, 100, 89.455096, 1773;
+				wellsAtQuality = 95.000000, 100, 93.340061, 1850;
+				wellsAtQuality = 80.000000, 100, 100.000000, 1982;
+
+				wellsAtQuality = 100.000000, 150, 77.953964, 1524;
+				wellsAtQuality = 99.000000, 150, 85.524297, 1672;
+				wellsAtQuality = 98.000000, 150, 89.718670, 1754;
+				wellsAtQuality = 95.000000, 150, 93.708440, 1832;
+				wellsAtQuality = 80.000000, 150, 100.000000, 1955;
+
+				wellsAtQuality = 100.000000, 200, 76.515930, 1489;
+				wellsAtQuality = 99.000000, 200, 86.690647, 1687;
+				wellsAtQuality = 98.000000, 200, 89.414183, 1740;
+				wellsAtQuality = 95.000000, 200, 93.422405, 1818;
+				wellsAtQuality = 80.000000, 200, 100.000000, 1946;
+
+				wellsAtQuality = 100.000000, 250, 58.604651, 1134;
+				wellsAtQuality = 99.000000, 250, 82.739018, 1601;
+				wellsAtQuality = 98.000000, 250, 88.268734, 1708;
+				wellsAtQuality = 95.000000, 250, 92.713178, 1794;
+				wellsAtQuality = 80.000000, 250, 100.000000, 1935;
+
+				wellsAtQuality = 100.000000, 300, 0.000000, 0;
+				wellsAtQuality = 99.000000, 300, 75.953999, 1453;
+				wellsAtQuality = 98.000000, 300, 85.363304, 1633;
+				wellsAtQuality = 95.000000, 300, 91.479352, 1750;
+				wellsAtQuality = 80.000000, 300, 100.000000, 1913;
+
+				wellsAtQuality = 100.000000, 350, 0.000000, 0;
+				wellsAtQuality = 99.000000, 350, 72.708002, 1372;
+				wellsAtQuality = 98.000000, 350, 85.002650, 1604;
+				wellsAtQuality = 95.000000, 350, 91.520933, 1727;
+				wellsAtQuality = 80.000000, 350, 100.000000, 1887;
+
+				wellsAtQuality = 100.000000, 400, 0.000000, 0;
+				wellsAtQuality = 99.000000, 400, 70.166042, 1310;
+				wellsAtQuality = 98.000000, 400, 81.521157, 1522;
+				wellsAtQuality = 95.000000, 400, 90.840921, 1696;
+				wellsAtQuality = 80.000000, 400, 100.000000, 1867;
+			}
+			/*
+			**	Sequence 'AVTF120'
+			*/
+			sequence
+			{
+				name = "AVTF120";
+
+				/*
+				**	Values are:
+				**
+				**	Accuracy, Length, Percent of mapped, Number of wells
+				*/
+				wellsAtQuality = 100.000000, 100, 85.499711, 1480;
+				wellsAtQuality = 99.000000, 100, 91.623339, 1586;
+				wellsAtQuality = 98.000000, 100, 94.569613, 1637;
+				wellsAtQuality = 95.000000, 100, 97.169266, 1682;
+				wellsAtQuality = 80.000000, 100, 100.000000, 1731;
+
+				wellsAtQuality = 100.000000, 150, 80.371661, 1384;
+				wellsAtQuality = 99.000000, 150, 89.140534, 1535;
+				wellsAtQuality = 98.000000, 150, 94.192799, 1622;
+				wellsAtQuality = 95.000000, 150, 96.806039, 1667;
+				wellsAtQuality = 80.000000, 150, 100.000000, 1722;
+
+				wellsAtQuality = 100.000000, 200, 77.771295, 1333;
+				wellsAtQuality = 99.000000, 200, 90.548425, 1552;
+				wellsAtQuality = 98.000000, 200, 93.290548, 1599;
+				wellsAtQuality = 95.000000, 200, 96.616103, 1656;
+				wellsAtQuality = 80.000000, 200, 100.000000, 1714;
+
+				wellsAtQuality = 100.000000, 250, 53.203998, 905;
+				wellsAtQuality = 99.000000, 250, 82.892416, 1410;
+				wellsAtQuality = 98.000000, 250, 90.358613, 1537;
+				wellsAtQuality = 95.000000, 250, 95.590829, 1626;
+				wellsAtQuality = 80.000000, 250, 100.000000, 1701;
+
+				wellsAtQuality = 100.000000, 300, 32.879953, 556;
+				wellsAtQuality = 99.000000, 300, 73.920757, 1250;
+				wellsAtQuality = 98.000000, 300, 84.565346, 1430;
+				wellsAtQuality = 95.000000, 300, 93.731520, 1585;
+				wellsAtQuality = 80.000000, 300, 100.000000, 1691;
+
+				wellsAtQuality = 100.000000, 350, 29.218843, 490;
+				wellsAtQuality = 99.000000, 350, 67.382230, 1130;
+				wellsAtQuality = 98.000000, 350, 81.693500, 1370;
+				wellsAtQuality = 95.000000, 350, 91.234347, 1530;
+				wellsAtQuality = 80.000000, 350, 100.000000, 1677;
+
+				wellsAtQuality = 100.000000, 400, 7.199032, 119;
+				wellsAtQuality = 99.000000, 400, 58.499698, 967;
+				wellsAtQuality = 98.000000, 400, 75.741077, 1252;
+				wellsAtQuality = 95.000000, 400, 89.473684, 1479;
+				wellsAtQuality = 80.000000, 400, 100.000000, 1653;
+			}
+			/*
+			**	Sequence 'AVTF150'
+			*/
+			sequence
+			{
+				name = "AVTF150";
+
+				/*
+				**	Values are:
+				**
+				**	Accuracy, Length, Percent of mapped, Number of wells
+				*/
+				wellsAtQuality = 100.000000, 100, 70.316694, 1310;
+				wellsAtQuality = 99.000000, 100, 87.439614, 1629;
+				wellsAtQuality = 98.000000, 100, 91.680086, 1708;
+				wellsAtQuality = 95.000000, 100, 95.705851, 1783;
+				wellsAtQuality = 80.000000, 100, 100.000000, 1863;
+
+				wellsAtQuality = 100.000000, 150, 69.783784, 1291;
+				wellsAtQuality = 99.000000, 150, 86.648649, 1603;
+				wellsAtQuality = 98.000000, 150, 92.432432, 1710;
+				wellsAtQuality = 95.000000, 150, 95.621622, 1769;
+				wellsAtQuality = 80.000000, 150, 100.000000, 1850;
+
+				wellsAtQuality = 100.000000, 200, 66.721044, 1227;
+				wellsAtQuality = 99.000000, 200, 89.396411, 1644;
+				wellsAtQuality = 98.000000, 200, 92.659054, 1704;
+				wellsAtQuality = 95.000000, 200, 95.976074, 1765;
+				wellsAtQuality = 80.000000, 200, 100.000000, 1839;
+
+				wellsAtQuality = 100.000000, 250, 65.502183, 1200;
+				wellsAtQuality = 99.000000, 250, 88.209607, 1616;
+				wellsAtQuality = 98.000000, 250, 92.740175, 1699;
+				wellsAtQuality = 95.000000, 250, 95.578603, 1751;
+				wellsAtQuality = 80.000000, 250, 100.000000, 1832;
+
+				wellsAtQuality = 100.000000, 300, 53.340635, 974;
+				wellsAtQuality = 99.000000, 300, 85.925520, 1569;
+				wellsAtQuality = 98.000000, 300, 90.306681, 1649;
+				wellsAtQuality = 95.000000, 300, 94.633078, 1728;
+				wellsAtQuality = 80.000000, 300, 100.000000, 1826;
+
+				wellsAtQuality = 100.000000, 350, 51.819184, 940;
+				wellsAtQuality = 99.000000, 350, 82.800441, 1502;
+				wellsAtQuality = 98.000000, 350, 89.140022, 1617;
+				wellsAtQuality = 95.000000, 350, 93.495039, 1696;
+				wellsAtQuality = 80.000000, 350, 100.000000, 1814;
+
+				wellsAtQuality = 100.000000, 400, 43.318486, 778;
+				wellsAtQuality = 99.000000, 400, 81.570156, 1465;
+				wellsAtQuality = 98.000000, 400, 87.639198, 1574;
+				wellsAtQuality = 95.000000, 400, 92.761693, 1666;
+				wellsAtQuality = 80.000000, 400, 100.000000, 1796;
+			}
+			/*
+			**	Sequence 'AVTF2'
+			*/
+			sequence
+			{
+				name = "AVTF2";
+
+				/*
+				**	Values are:
+				**
+				**	Accuracy, Length, Percent of mapped, Number of wells
+				*/
+				wellsAtQuality = 100.000000, 100, 79.698709, 1111;
+				wellsAtQuality = 99.000000, 100, 92.180775, 1285;
+				wellsAtQuality = 98.000000, 100, 94.404591, 1316;
+				wellsAtQuality = 95.000000, 100, 96.269727, 1342;
+				wellsAtQuality = 80.000000, 100, 100.000000, 1394;
+
+				wellsAtQuality = 100.000000, 150, 77.315147, 1077;
+				wellsAtQuality = 99.000000, 150, 90.452261, 1260;
+				wellsAtQuality = 98.000000, 150, 94.472362, 1316;
+				wellsAtQuality = 95.000000, 150, 95.692749, 1333;
+				wellsAtQuality = 80.000000, 150, 100.000000, 1393;
+
+				wellsAtQuality = 100.000000, 200, 75.504323, 1048;
+				wellsAtQuality = 99.000000, 200, 92.002882, 1277;
+				wellsAtQuality = 98.000000, 200, 94.164265, 1307;
+				wellsAtQuality = 95.000000, 200, 95.821326, 1330;
+				wellsAtQuality = 80.000000, 200, 100.000000, 1388;
+
+				wellsAtQuality = 100.000000, 250, 65.966691, 911;
+				wellsAtQuality = 99.000000, 250, 86.459088, 1194;
+				wellsAtQuality = 98.000000, 250, 92.469225, 1277;
+				wellsAtQuality = 95.000000, 250, 95.582911, 1320;
+				wellsAtQuality = 80.000000, 250, 100.000000, 1381;
+
+				wellsAtQuality = 100.000000, 300, 48.982558, 674;
+				wellsAtQuality = 99.000000, 300, 83.357558, 1147;
+				wellsAtQuality = 98.000000, 300, 89.752907, 1235;
+				wellsAtQuality = 95.000000, 300, 95.130814, 1309;
+				wellsAtQuality = 80.000000, 300, 100.000000, 1376;
+
+				wellsAtQuality = 100.000000, 350, 32.017544, 438;
+				wellsAtQuality = 99.000000, 350, 72.295322, 989;
+				wellsAtQuality = 98.000000, 350, 82.090643, 1123;
+				wellsAtQuality = 95.000000, 350, 91.081871, 1246;
+				wellsAtQuality = 80.000000, 350, 100.000000, 1368;
+
+				wellsAtQuality = 100.000000, 400, 0.956586, 13;
+				wellsAtQuality = 99.000000, 400, 54.966887, 747;
+				wellsAtQuality = 98.000000, 400, 71.302428, 969;
+				wellsAtQuality = 95.000000, 400, 86.166299, 1171;
+				wellsAtQuality = 80.000000, 400, 100.000000, 1359;
+			}
+			/*
+			**	Sequence 'AVTF7'
+			*/
+			sequence
+			{
+				name = "AVTF7";
+
+				/*
+				**	Values are:
+				**
+				**	Accuracy, Length, Percent of mapped, Number of wells
+				*/
+				wellsAtQuality = 100.000000, 100, 84.145688, 1571;
+				wellsAtQuality = 99.000000, 100, 93.411891, 1744;
+				wellsAtQuality = 98.000000, 100, 95.500803, 1783;
+				wellsAtQuality = 95.000000, 100, 97.321907, 1817;
+				wellsAtQuality = 80.000000, 100, 100.000000, 1867;
+
+				wellsAtQuality = 100.000000, 150, 82.831001, 1539;
+				wellsAtQuality = 99.000000, 150, 91.711518, 1704;
+				wellsAtQuality = 98.000000, 150, 94.564047, 1757;
+				wellsAtQuality = 95.000000, 150, 96.663079, 1796;
+				wellsAtQuality = 80.000000, 150, 100.000000, 1858;
+
+				wellsAtQuality = 100.000000, 200, 81.607335, 1513;
+				wellsAtQuality = 99.000000, 200, 92.826321, 1721;
+				wellsAtQuality = 98.000000, 200, 94.336570, 1749;
+				wellsAtQuality = 95.000000, 200, 96.548004, 1790;
+				wellsAtQuality = 80.000000, 200, 100.000000, 1854;
+
+				wellsAtQuality = 100.000000, 250, 73.863636, 1365;
+				wellsAtQuality = 99.000000, 250, 88.690476, 1639;
+				wellsAtQuality = 98.000000, 250, 93.398268, 1726;
+				wellsAtQuality = 95.000000, 250, 95.887446, 1772;
+				wellsAtQuality = 80.000000, 250, 100.000000, 1848;
+
+				wellsAtQuality = 100.000000, 300, 65.960912, 1215;
+				wellsAtQuality = 99.000000, 300, 85.830619, 1581;
+				wellsAtQuality = 98.000000, 300, 91.259501, 1681;
+				wellsAtQuality = 95.000000, 300, 95.602606, 1761;
+				wellsAtQuality = 80.000000, 300, 100.000000, 1842;
+
+				wellsAtQuality = 100.000000, 350, 57.291098, 1049;
+				wellsAtQuality = 99.000000, 350, 79.956308, 1464;
+				wellsAtQuality = 98.000000, 350, 88.421628, 1619;
+				wellsAtQuality = 95.000000, 350, 94.538504, 1731;
+				wellsAtQuality = 80.000000, 350, 100.000000, 1831;
+
+				wellsAtQuality = 100.000000, 400, 52.663372, 959;
+				wellsAtQuality = 99.000000, 400, 76.990664, 1402;
+				wellsAtQuality = 98.000000, 400, 84.514003, 1539;
+				wellsAtQuality = 95.000000, 400, 93.629874, 1705;
+				wellsAtQuality = 80.000000, 400, 100.000000, 1821;
+			}
+			/*
+			**	Sequence 'AVTF90'
+			*/
+			sequence
+			{
+				name = "AVTF90";
+
+				/*
+				**	Values are:
+				**
+				**	Accuracy, Length, Percent of mapped, Number of wells
+				*/
+				wellsAtQuality = 100.000000, 100, 66.998342, 808;
+				wellsAtQuality = 99.000000, 100, 76.285240, 920;
+				wellsAtQuality = 98.000000, 100, 83.001658, 1001;
+				wellsAtQuality = 95.000000, 100, 88.888889, 1072;
+				wellsAtQuality = 80.000000, 100, 100.000000, 1206;
+
+				wellsAtQuality = 100.000000, 150, 62.362869, 739;
+				wellsAtQuality = 99.000000, 150, 75.527426, 895;
+				wellsAtQuality = 98.000000, 150, 83.628692, 991;
+				wellsAtQuality = 95.000000, 150, 87.848101, 1041;
+				wellsAtQuality = 80.000000, 150, 100.000000, 1185;
+
+				wellsAtQuality = 100.000000, 200, 48.267117, 571;
+				wellsAtQuality = 99.000000, 200, 68.047337, 805;
+				wellsAtQuality = 98.000000, 200, 73.879966, 874;
+				wellsAtQuality = 95.000000, 200, 81.572274, 965;
+				wellsAtQuality = 80.000000, 200, 100.000000, 1183;
+
+				wellsAtQuality = 100.000000, 250, 32.240921, 364;
+				wellsAtQuality = 99.000000, 250, 60.141718, 679;
+				wellsAtQuality = 98.000000, 250, 72.719221, 821;
+				wellsAtQuality = 95.000000, 250, 80.956599, 914;
+				wellsAtQuality = 80.000000, 250, 100.000000, 1129;
+
+				wellsAtQuality = 100.000000, 300, 17.990868, 197;
+				wellsAtQuality = 99.000000, 300, 60.730594, 665;
+				wellsAtQuality = 98.000000, 300, 72.328767, 792;
+				wellsAtQuality = 95.000000, 300, 82.283105, 901;
+				wellsAtQuality = 80.000000, 300, 100.000000, 1095;
+
+				wellsAtQuality = 100.000000, 350, 0.000000, 0;
+				wellsAtQuality = 99.000000, 350, 2.192564, 23;
+				wellsAtQuality = 98.000000, 350, 19.733079, 207;
+				wellsAtQuality = 95.000000, 350, 60.152526, 631;
+				wellsAtQuality = 80.000000, 350, 100.000000, 1049;
+
+				wellsAtQuality = 100.000000, 400, 0.000000, 0;
+				wellsAtQuality = 99.000000, 400, 0.795229, 8;
+				wellsAtQuality = 98.000000, 400, 5.566600, 56;
+				wellsAtQuality = 95.000000, 400, 41.451292, 417;
+				wellsAtQuality = 80.000000, 400, 100.000000, 1006;
+			}
+		}
+	}
+	/*
+	**	Key 'TCAG'
+	*/
+	key
+	{
+		keySequence  = "TCAG";
+		keyPassWells = 820186;
+	
+		/*
+		**	Values are:
+		**
+		**	Average, Standard Deviation
+		*/
+		keySignalPerBase = 263.266000, 163.338000;
+		
+		ppi1 = 389.911000, 126.009000;
+		ppi2 = 292.317000, 60.018500;
+		ppi3 = 241.624000, 45.365700;
+		
+	}
+}
+/*
+**	Region '2'
+*/
+region
+{
+	name = "2";
+	
+	rawWells     = 834798;
+	keyPassWells = 820626;
+	
+	/*
+	**	Key 'CATG'
+	*/
+	key
+	{
+		keySequence  = "CATG";
+		keyPassWells = 8783;
+	
+		/*
+		**	Values are:
+		**
+		**	Average, Standard Deviation
+		*/
+		keySignalPerBase = 295.803000, 120.161000;
+		
+		ppi1 = 391.709000, 106.252000;
+		ppi2 = 282.389000, 67.978800;
+		ppi3 = 228.178000, 56.001300;
+		
+		singletA = 0.990385, 0.168605;
+		singletT = 0.988783, 0.150680;
+		singletG = 1.002230, 0.172475;
+		singletC = 1.007650, 0.159409;
+	
+		singletN = 0.998170, 0.163329;
+		
+		/*
+		**	Sequence Metrics for Templates
+		*/
+		matchSequenceMetrics
+		{
+			/*
+			**  Sequence 'all'
+			*/
+			sequence
+			{
+				name = "all";
+				
+				/*
+				**  Values are:
+				**
+				**  Accuracy, Length, Percent of keypass, Number of wells
+				*/
+				wellsAtQuality = 100.000000, 100, 71.615621, 6290;
+				wellsAtQuality = 99.000000, 100, 82.511670, 7247;
+				wellsAtQuality = 98.000000, 100, 86.143687, 7566;
+				wellsAtQuality = 95.000000, 100, 90.196971, 7922;
+				wellsAtQuality = 80.000000, 100, 95.605146, 8397;
+
+				wellsAtQuality = 100.000000, 150, 67.744506, 5950;
+				wellsAtQuality = 99.000000, 150, 79.187066, 6955;
+				wellsAtQuality = 98.000000, 150, 84.982352, 7464;
+				wellsAtQuality = 95.000000, 150, 88.887624, 7807;
+				wellsAtQuality = 80.000000, 150, 94.625982, 8311;
+
+				wellsAtQuality = 100.000000, 200, 62.951156, 5529;
+				wellsAtQuality = 99.000000, 200, 78.526699, 6897;
+				wellsAtQuality = 98.000000, 200, 82.739383, 7267;
+				wellsAtQuality = 95.000000, 200, 87.213936, 7660;
+				wellsAtQuality = 80.000000, 200, 93.806217, 8239;
+
+				wellsAtQuality = 100.000000, 250, 49.641353, 4360;
+				wellsAtQuality = 99.000000, 250, 71.444837, 6275;
+				wellsAtQuality = 98.000000, 250, 79.232608, 6959;
+				wellsAtQuality = 95.000000, 250, 85.027895, 7468;
+				wellsAtQuality = 80.000000, 250, 92.223614, 8100;
+
+				wellsAtQuality = 100.000000, 300, 27.974496, 2457;
+				wellsAtQuality = 99.000000, 300, 65.774792, 5777;
+				wellsAtQuality = 98.000000, 300, 74.780827, 6568;
+				wellsAtQuality = 95.000000, 300, 82.591370, 7254;
+				wellsAtQuality = 80.000000, 300, 90.697939, 7966;
+
+				wellsAtQuality = 100.000000, 350, 20.926790, 1838;
+				wellsAtQuality = 99.000000, 350, 54.206991, 4761;
+				wellsAtQuality = 98.000000, 350, 66.196061, 5814;
+				wellsAtQuality = 95.000000, 350, 77.388136, 6797;
+				wellsAtQuality = 80.000000, 350, 89.149493, 7830;
+
+				wellsAtQuality = 100.000000, 400, 13.571673, 1192;
+				wellsAtQuality = 99.000000, 400, 47.671638, 4187;
+				wellsAtQuality = 98.000000, 400, 59.489924, 5225;
+				wellsAtQuality = 95.000000, 400, 73.186838, 6428;
+				wellsAtQuality = 80.000000, 400, 87.441649, 7680;
+			}
+			/*
+			**	Sequence 'AVTF100'
+			*/
+			sequence
+			{
+				name = "AVTF100";
+
+				/*
+				**	Values are:
+				**
+				**	Accuracy, Length, Percent of mapped, Number of wells
+				*/
+				wellsAtQuality = 100.000000, 100, 77.764350, 1287;
+				wellsAtQuality = 99.000000, 100, 86.102719, 1425;
+				wellsAtQuality = 98.000000, 100, 89.486405, 1481;
+				wellsAtQuality = 95.000000, 100, 93.413897, 1546;
+				wellsAtQuality = 80.000000, 100, 100.000000, 1655;
+
+				wellsAtQuality = 100.000000, 150, 74.908648, 1230;
+				wellsAtQuality = 99.000000, 150, 83.191230, 1366;
+				wellsAtQuality = 98.000000, 150, 89.524970, 1470;
+				wellsAtQuality = 95.000000, 150, 93.057247, 1528;
+				wellsAtQuality = 80.000000, 150, 100.000000, 1642;
+
+				wellsAtQuality = 100.000000, 200, 72.007366, 1173;
+				wellsAtQuality = 99.000000, 200, 83.793738, 1365;
+				wellsAtQuality = 98.000000, 200, 88.152241, 1436;
+				wellsAtQuality = 95.000000, 200, 93.063229, 1516;
+				wellsAtQuality = 80.000000, 200, 100.000000, 1629;
+
+				wellsAtQuality = 100.000000, 250, 56.129434, 902;
+				wellsAtQuality = 99.000000, 250, 78.904792, 1268;
+				wellsAtQuality = 98.000000, 250, 86.185439, 1385;
+				wellsAtQuality = 95.000000, 250, 92.408214, 1485;
+				wellsAtQuality = 80.000000, 250, 100.000000, 1607;
+
+				wellsAtQuality = 100.000000, 300, 0.000000, 0;
+				wellsAtQuality = 99.000000, 300, 72.986684, 1151;
+				wellsAtQuality = 98.000000, 300, 82.815472, 1306;
+				wellsAtQuality = 95.000000, 300, 91.185796, 1438;
+				wellsAtQuality = 80.000000, 300, 100.000000, 1577;
+
+				wellsAtQuality = 100.000000, 350, 0.000000, 0;
+				wellsAtQuality = 99.000000, 350, 67.914784, 1052;
+				wellsAtQuality = 98.000000, 350, 81.859264, 1268;
+				wellsAtQuality = 95.000000, 350, 90.316333, 1399;
+				wellsAtQuality = 80.000000, 350, 100.000000, 1549;
+
+				wellsAtQuality = 100.000000, 400, 0.000000, 0;
+				wellsAtQuality = 99.000000, 400, 63.636364, 973;
+				wellsAtQuality = 98.000000, 400, 78.351864, 1198;
+				wellsAtQuality = 95.000000, 400, 89.404840, 1367;
+				wellsAtQuality = 80.000000, 400, 100.000000, 1529;
+			}
+			/*
+			**	Sequence 'AVTF120'
+			*/
+			sequence
+			{
+				name = "AVTF120";
+
+				/*
+				**	Values are:
+				**
+				**	Accuracy, Length, Percent of mapped, Number of wells
+				*/
+				wellsAtQuality = 100.000000, 100, 80.831572, 1147;
+				wellsAtQuality = 99.000000, 100, 88.301621, 1253;
+				wellsAtQuality = 98.000000, 100, 92.811839, 1317;
+				wellsAtQuality = 95.000000, 100, 96.476392, 1369;
+				wellsAtQuality = 80.000000, 100, 100.000000, 1419;
+
+				wellsAtQuality = 100.000000, 150, 73.968706, 1040;
+				wellsAtQuality = 99.000000, 150, 83.570413, 1175;
+				wellsAtQuality = 98.000000, 150, 91.038407, 1280;
+				wellsAtQuality = 95.000000, 150, 95.519203, 1343;
+				wellsAtQuality = 80.000000, 150, 100.000000, 1406;
+
+				wellsAtQuality = 100.000000, 200, 69.799139, 973;
+				wellsAtQuality = 99.000000, 200, 85.365854, 1190;
+				wellsAtQuality = 98.000000, 200, 90.100430, 1256;
+				wellsAtQuality = 95.000000, 200, 95.265423, 1328;
+				wellsAtQuality = 80.000000, 200, 100.000000, 1394;
+
+				wellsAtQuality = 100.000000, 250, 34.156977, 470;
+				wellsAtQuality = 99.000000, 250, 73.255814, 1008;
+				wellsAtQuality = 98.000000, 250, 85.755814, 1180;
+				wellsAtQuality = 95.000000, 250, 93.459302, 1286;
+				wellsAtQuality = 80.000000, 250, 100.000000, 1376;
+
+				wellsAtQuality = 100.000000, 300, 17.880795, 243;
+				wellsAtQuality = 99.000000, 300, 59.529065, 809;
+				wellsAtQuality = 98.000000, 300, 77.409860, 1052;
+				wellsAtQuality = 95.000000, 300, 91.685063, 1246;
+				wellsAtQuality = 80.000000, 300, 100.000000, 1359;
+
+				wellsAtQuality = 100.000000, 350, 15.789474, 210;
+				wellsAtQuality = 99.000000, 350, 52.406015, 697;
+				wellsAtQuality = 98.000000, 350, 73.007519, 971;
+				wellsAtQuality = 95.000000, 350, 88.421053, 1176;
+				wellsAtQuality = 80.000000, 350, 100.000000, 1330;
+
+				wellsAtQuality = 100.000000, 400, 4.201681, 55;
+				wellsAtQuality = 99.000000, 400, 40.947288, 536;
+				wellsAtQuality = 98.000000, 400, 63.407181, 830;
+				wellsAtQuality = 95.000000, 400, 84.491979, 1106;
+				wellsAtQuality = 80.000000, 400, 100.000000, 1309;
+			}
+			/*
+			**	Sequence 'AVTF150'
+			*/
+			sequence
+			{
+				name = "AVTF150";
+
+				/*
+				**	Values are:
+				**
+				**	Accuracy, Length, Percent of mapped, Number of wells
+				*/
+				wellsAtQuality = 100.000000, 100, 72.181938, 1095;
+				wellsAtQuality = 99.000000, 100, 84.311140, 1279;
+				wellsAtQuality = 98.000000, 100, 89.255109, 1354;
+				wellsAtQuality = 95.000000, 100, 94.726434, 1437;
+				wellsAtQuality = 80.000000, 100, 100.000000, 1517;
+
+				wellsAtQuality = 100.000000, 150, 70.808283, 1060;
+				wellsAtQuality = 99.000000, 150, 83.166333, 1245;
+				wellsAtQuality = 98.000000, 150, 90.247161, 1351;
+				wellsAtQuality = 95.000000, 150, 95.323981, 1427;
+				wellsAtQuality = 80.000000, 150, 100.000000, 1497;
+
+				wellsAtQuality = 100.000000, 200, 67.204301, 1000;
+				wellsAtQuality = 99.000000, 200, 85.483871, 1272;
+				wellsAtQuality = 98.000000, 200, 90.456989, 1346;
+				wellsAtQuality = 95.000000, 200, 95.295699, 1418;
+				wellsAtQuality = 80.000000, 200, 100.000000, 1488;
+
+				wellsAtQuality = 100.000000, 250, 65.741368, 971;
+				wellsAtQuality = 99.000000, 250, 82.464455, 1218;
+				wellsAtQuality = 98.000000, 250, 89.505755, 1322;
+				wellsAtQuality = 95.000000, 250, 94.786730, 1400;
+				wellsAtQuality = 80.000000, 250, 100.000000, 1477;
+
+				wellsAtQuality = 100.000000, 300, 52.292950, 764;
+				wellsAtQuality = 99.000000, 300, 79.397673, 1160;
+				wellsAtQuality = 98.000000, 300, 86.516085, 1264;
+				wellsAtQuality = 95.000000, 300, 92.539357, 1352;
+				wellsAtQuality = 80.000000, 300, 100.000000, 1461;
+
+				wellsAtQuality = 100.000000, 350, 50.415512, 728;
+				wellsAtQuality = 99.000000, 350, 75.623269, 1092;
+				wellsAtQuality = 98.000000, 350, 83.795014, 1210;
+				wellsAtQuality = 95.000000, 350, 91.066482, 1315;
+				wellsAtQuality = 80.000000, 350, 100.000000, 1444;
+
+				wellsAtQuality = 100.000000, 400, 40.680369, 574;
+				wellsAtQuality = 99.000000, 400, 75.549256, 1066;
+				wellsAtQuality = 98.000000, 400, 81.644224, 1152;
+				wellsAtQuality = 95.000000, 400, 91.070163, 1285;
+				wellsAtQuality = 80.000000, 400, 100.000000, 1411;
+			}
+			/*
+			**	Sequence 'AVTF2'
+			*/
+			sequence
+			{
+				name = "AVTF2";
+
+				/*
+				**	Values are:
+				**
+				**	Accuracy, Length, Percent of mapped, Number of wells
+				*/
+				wellsAtQuality = 100.000000, 100, 69.633099, 892;
+				wellsAtQuality = 99.000000, 100, 86.104606, 1103;
+				wellsAtQuality = 98.000000, 100, 89.539422, 1147;
+				wellsAtQuality = 95.000000, 100, 93.286495, 1195;
+				wellsAtQuality = 80.000000, 100, 100.000000, 1281;
+
+				wellsAtQuality = 100.000000, 150, 67.902208, 861;
+				wellsAtQuality = 99.000000, 150, 84.621451, 1073;
+				wellsAtQuality = 98.000000, 150, 88.958991, 1128;
+				wellsAtQuality = 95.000000, 150, 92.823344, 1177;
+				wellsAtQuality = 80.000000, 150, 100.000000, 1268;
+
+				wellsAtQuality = 100.000000, 200, 65.283320, 818;
+				wellsAtQuality = 99.000000, 200, 85.634477, 1073;
+				wellsAtQuality = 98.000000, 200, 88.826816, 1113;
+				wellsAtQuality = 95.000000, 200, 93.056664, 1166;
+				wellsAtQuality = 80.000000, 200, 100.000000, 1253;
+
+				wellsAtQuality = 100.000000, 250, 55.439162, 688;
+				wellsAtQuality = 99.000000, 250, 78.565673, 975;
+				wellsAtQuality = 98.000000, 250, 85.979049, 1067;
+				wellsAtQuality = 95.000000, 250, 91.700242, 1138;
+				wellsAtQuality = 80.000000, 250, 100.000000, 1241;
+
+				wellsAtQuality = 100.000000, 300, 36.997539, 451;
+				wellsAtQuality = 99.000000, 300, 75.717801, 923;
+				wellsAtQuality = 98.000000, 300, 83.264971, 1015;
+				wellsAtQuality = 95.000000, 300, 90.730107, 1106;
+				wellsAtQuality = 80.000000, 300, 100.000000, 1219;
+
+				wellsAtQuality = 100.000000, 350, 22.518766, 270;
+				wellsAtQuality = 99.000000, 350, 64.637198, 775;
+				wellsAtQuality = 98.000000, 350, 76.313595, 915;
+				wellsAtQuality = 95.000000, 350, 87.072560, 1044;
+				wellsAtQuality = 80.000000, 350, 100.000000, 1199;
+
+				wellsAtQuality = 100.000000, 400, 1.359388, 16;
+				wellsAtQuality = 99.000000, 400, 46.898895, 552;
+				wellsAtQuality = 98.000000, 400, 66.100255, 778;
+				wellsAtQuality = 95.000000, 400, 81.988105, 965;
+				wellsAtQuality = 80.000000, 400, 100.000000, 1177;
+			}
+			/*
+			**	Sequence 'AVTF7'
+			*/
+			sequence
+			{
+				name = "AVTF7";
+
+				/*
+				**	Values are:
+				**
+				**	Accuracy, Length, Percent of mapped, Number of wells
+				*/
+				wellsAtQuality = 100.000000, 100, 73.489279, 1131;
+				wellsAtQuality = 99.000000, 100, 88.693957, 1365;
+				wellsAtQuality = 98.000000, 100, 91.293047, 1405;
+				wellsAtQuality = 95.000000, 100, 95.646524, 1472;
+				wellsAtQuality = 80.000000, 100, 100.000000, 1539;
+
+				wellsAtQuality = 100.000000, 150, 72.578534, 1109;
+				wellsAtQuality = 99.000000, 150, 86.256545, 1318;
+				wellsAtQuality = 98.000000, 150, 90.772251, 1387;
+				wellsAtQuality = 95.000000, 150, 94.568063, 1445;
+				wellsAtQuality = 80.000000, 150, 100.000000, 1528;
+
+				wellsAtQuality = 100.000000, 200, 71.542025, 1081;
+				wellsAtQuality = 99.000000, 200, 88.087359, 1331;
+				wellsAtQuality = 98.000000, 200, 91.330245, 1380;
+				wellsAtQuality = 95.000000, 200, 95.168762, 1438;
+				wellsAtQuality = 80.000000, 200, 100.000000, 1511;
+
+				wellsAtQuality = 100.000000, 250, 65.127175, 973;
+				wellsAtQuality = 99.000000, 250, 84.002677, 1255;
+				wellsAtQuality = 98.000000, 250, 89.625167, 1339;
+				wellsAtQuality = 95.000000, 250, 94.176707, 1407;
+				wellsAtQuality = 80.000000, 250, 100.000000, 1494;
+
+				wellsAtQuality = 100.000000, 300, 56.102495, 832;
+				wellsAtQuality = 99.000000, 300, 81.254214, 1205;
+				wellsAtQuality = 98.000000, 300, 87.862441, 1303;
+				wellsAtQuality = 95.000000, 300, 93.391773, 1385;
+				wellsAtQuality = 80.000000, 300, 100.000000, 1483;
+
+				wellsAtQuality = 100.000000, 350, 42.886317, 630;
+				wellsAtQuality = 99.000000, 350, 75.901974, 1115;
+				wellsAtQuality = 98.000000, 350, 84.615385, 1243;
+				wellsAtQuality = 95.000000, 350, 92.375766, 1357;
+				wellsAtQuality = 80.000000, 350, 100.000000, 1469;
+
+				wellsAtQuality = 100.000000, 400, 37.698139, 547;
+				wellsAtQuality = 99.000000, 400, 71.950379, 1044;
+				wellsAtQuality = 98.000000, 400, 81.047553, 1176;
+				wellsAtQuality = 95.000000, 400, 91.109580, 1322;
+				wellsAtQuality = 80.000000, 400, 100.000000, 1451;
+			}
+			/*
+			**	Sequence 'AVTF90'
+			*/
+			sequence
+			{
+				name = "AVTF90";
+
+				/*
+				**	Values are:
+				**
+				**	Accuracy, Length, Percent of mapped, Number of wells
+				*/
+				wellsAtQuality = 100.000000, 100, 74.847870, 738;
+				wellsAtQuality = 99.000000, 100, 83.367140, 822;
+				wellsAtQuality = 98.000000, 100, 87.423935, 862;
+				wellsAtQuality = 95.000000, 100, 91.582150, 903;
+				wellsAtQuality = 80.000000, 100, 100.000000, 986;
+
+				wellsAtQuality = 100.000000, 150, 67.010309, 650;
+				wellsAtQuality = 99.000000, 150, 80.206186, 778;
+				wellsAtQuality = 98.000000, 150, 87.422680, 848;
+				wellsAtQuality = 95.000000, 150, 91.443299, 887;
+				wellsAtQuality = 80.000000, 150, 100.000000, 970;
+
+				wellsAtQuality = 100.000000, 200, 50.207469, 484;
+				wellsAtQuality = 99.000000, 200, 69.087137, 666;
+				wellsAtQuality = 98.000000, 200, 76.348548, 736;
+				wellsAtQuality = 95.000000, 200, 82.365145, 794;
+				wellsAtQuality = 80.000000, 200, 100.000000, 964;
+
+				wellsAtQuality = 100.000000, 250, 39.337017, 356;
+				wellsAtQuality = 99.000000, 250, 60.883978, 551;
+				wellsAtQuality = 98.000000, 250, 73.591160, 666;
+				wellsAtQuality = 95.000000, 250, 83.093923, 752;
+				wellsAtQuality = 80.000000, 250, 100.000000, 905;
+
+				wellsAtQuality = 100.000000, 300, 19.261822, 167;
+				wellsAtQuality = 99.000000, 300, 61.014994, 529;
+				wellsAtQuality = 98.000000, 300, 72.433679, 628;
+				wellsAtQuality = 95.000000, 300, 83.852364, 727;
+				wellsAtQuality = 80.000000, 300, 100.000000, 867;
+
+				wellsAtQuality = 100.000000, 350, 0.000000, 0;
+				wellsAtQuality = 99.000000, 350, 3.575685, 30;
+				wellsAtQuality = 98.000000, 350, 24.672229, 207;
+				wellsAtQuality = 95.000000, 350, 60.309893, 506;
+				wellsAtQuality = 80.000000, 350, 100.000000, 839;
+
+				wellsAtQuality = 100.000000, 400, 0.000000, 0;
+				wellsAtQuality = 99.000000, 400, 1.992528, 16;
+				wellsAtQuality = 98.000000, 400, 11.332503, 91;
+				wellsAtQuality = 95.000000, 400, 47.696139, 383;
+				wellsAtQuality = 80.000000, 400, 100.000000, 803;
+			}
+		}
+	}
+	/*
+	**	Key 'TCAG'
+	*/
+	key
+	{
+		keySequence  = "TCAG";
+		keyPassWells = 811787;
+	
+		/*
+		**	Values are:
+		**
+		**	Average, Standard Deviation
+		*/
+		keySignalPerBase = 256.050000, 161.059000;
+		
+		ppi1 = 404.205000, 110.082000;
+		ppi2 = 303.020000, 66.241600;
+		ppi3 = 246.212000, 50.818100;
+		
+	}
+}

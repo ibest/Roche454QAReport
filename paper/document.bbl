@@ -1,0 +1,27 @@
+\begin{thebibliography}{}
+
+\bibitem[Cock {\em et~al.}(2010)Cock, Fields, Goto, Heuer, and Rice]{Cock2010}
+Cock, P. J.~a., Fields, C.~J., Goto, N., Heuer, M.~L., and Rice, P.~M. (2010).
+\newblock {The Sanger FASTQ file format for sequences with quality scores, and
+  the Solexa/Illumina FASTQ variants.}
+\newblock {\em Nucleic acids research\/}, {\bf 38}(6), 1767--71.
+
+\bibitem[Ewing and Green(1998)Ewing and Green]{Ewing1998b}
+Ewing, B. and Green, P. (1998).
+\newblock {Base-calling of automated sequencer traces usingPhred. II. error
+  probabilities}.
+\newblock {\em Genome research\/}, {\bf 8}(3), 186.
+
+\bibitem[Ewing {\em et~al.}(1998)Ewing, Hillier, Wendl, and Green]{Ewing1998a}
+Ewing, B., Hillier, L., Wendl, M.~C., and Green, P. (1998).
+\newblock {Base-calling of automated sequencer traces using Phred. I. Accuracy
+  Assessment}.
+\newblock {\em Genome Res\/}, {\bf 8}, 175--185.
+
+\bibitem[Morgan {\em et~al.}(????)Morgan, Lawrence, and Anders]{shortread}
+Morgan, M., Lawrence, M., and Anders, S. (????).
+\newblock {\em ShortRead: Base classes and methods for high-throughput
+  short-read sequencing data.}
+\newblock R package version 1.2.1.
+
+\end{thebibliography}

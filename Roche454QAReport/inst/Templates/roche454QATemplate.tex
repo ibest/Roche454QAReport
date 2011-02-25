@@ -1,0 +1,321 @@
+%% prototype document for roche454QAReport output document
+
+\documentclass[11pt]{article}
+
+
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{amsmath} 
+\usepackage{underscore}
+\usepackage{natbib}
+
+\newcommand{\Rfunction}[1]{{\texttt{#1}}}
+\newcommand{\Robject}[1]{{\texttt{#1}}}
+\newcommand{\Rpackage}[1]{{\textsf{#1}}}
+\newcommand{\Rmethod}[1]{{\texttt{#1}}}
+\newcommand{\Rfunarg}[1]{{\texttt{#1}}}
+\newcommand{\Rclass}[1]{{\textit{#1}}}
+\DeclareGraphicsExtensions{.pdf}
+
+\begin{document}
+
+\title{Quality Report for Roche 454 Pyrosequencing Experiment 
+\\
+@repName@}
+\date{}
+
+\maketitle
+\tableofcontents
+
+\vspace{1.08cm}
+This is a quality assessment report for the dataset \textit{@repName@}.  
+The data are comprised of @numRegions@ regions.
+
+For details on the software packages that were used to produce this
+report see Section~\ref{sec:ack}.
+
+%------------------------------------------------------
+\section{The PHRED Quality score}
+%------------------------------------------------------
+
+A PHRED quality score is assigned to every DNA base in the 454 run. PHRED quality is a transformed estimated probability of a DNA base being incorrectly called \citep{Ewing1998a,Ewing1998b}. 
+Equation~\ref{eq:01} describes the log transformed (q) estimated error probability (p) for any particular DNA base in a sequence file.    
+
+\begin{equation}
+q = -10*\log(p)  \label{eq:01}
+\end{equation}
+
+For example: A quality score of 29 would give you a probability of 1 miss-called base for every ~794 bases.  
+
+
+\begin{table}
+\begin{tabular}{|l|l|l|}
+\hline
+Phred Quality Score & Probability of incorrect base call & Base call accuracy \\
+\hline
+ 10 & 1 in 10 & 90 \%  \\
+\hline
+ 20 & 1 in 100 & 99 \%  \\
+\hline
+ 30 & 1 in 1000 & 99.9 \%  \\
+\hline
+ 40 & 1 in 10000 & 99.99 \%  \\
+\hline
+ 50 & 1 in 100000 & 99.999 \%  \\
+\hline
+\end{tabular}
+\caption{Explanation of Phred Quality Scores in terms of probability.  The higher the Phred score the lower the chance a base was incorrectly called.}
+\end{table}
+
+%------------------------------------------------------
+\section{The quality metrics recommended by Roche}
+%------------------------------------------------------
+
+Below are the benchmarks as suggested by Roche.  These metrics are only 
+relative to a 2-region PTP.
+
+\begin{itemize}
+    \item %1^{st}% Benchmark: totalKeyPass/totalRawWells; \textcolor{RoyalBlue}{>90\%}
+        \begin{itemize}
+            \item The result from your run is X \% .
+        \end{itemize}
+    \item %2^{nd}% Benchmark: totalPassFiltering/totalKeyPass; \textcolor{RoyalBlue}{>50\%}
+     	\begin{itemize}
+	    \item The result from your run is X \% .
+    	\end{itemize}
+    \item %3^{rd}% Benchmark: Average read length; \textcolor{RoyalBlue}{>300 bp}
+	\begin{itemize}
+	    \item The average read length from your run is X .
+        \end{itemize}
+    \item %4^{th}% Benchmark: Number of total bases for a 2 region PTP; \textcolor{RoyalBlue}{>300 million}  
+	\begin{itemize}
+	    \item The results from your run is X bases.
+	\end{itemize}
+    \item %5^{th}% Benchmark (unoffical): Mix+dot/totalKeyPass; \textcolor{RoyalBlue}{<20\%}
+        \begin{itemize}
+            \item The result from your run is X \% .
+        \end{itemize}
+    \item %6^{th}% Benchmark (unoffical): Total Reads or totalPassFiltering; \textcolor{RoyalBlue}{~1 million}
+        \begin{itemize}
+            \item The results from your run is X bases.
+        \end{itemize}
+\end{itemize}
+
+\begin{center}
+@TABLE1@
+\end{center}
+
+
+\begin{center}
+@QAPLOTS@
+\end{center}
+
+%------------------------------------------------------
+\section{The quality metrics recommended by Roche 454}
+%------------------------------------------------------
+
+Roche 454 applies a number of stringent filtering algorithms  in order to capture and discard poor quality reads,  ensuring that only the high quality data are retained. High quality data yields a better assembly even with a lower number of reads. Tables~\ref{table1}~\ref{table2}~\ref{table3} contain the read filter statistics described below.
+
+
+\subsection{Read rejecting filters}
+
+Read rejecting filters are applied as a pass/fail test and quickly discard no-information or low information active wells.
+
+\begin{itemize}
+\item \emph{Key Pass Filter} Ð fails for reads that do not start with a valid 4-base ÔkeyÕ sequence corresponding to either a library read: ÔTCAGÕ or a Control DNA read, ÔCATGÕ (GS FLX Titanium chemistry; see Section 7.1 for other chemistries) (numKeyPass metric).
+
+\item \emph{Dots Filter} Ð fails for reads with too many negative flows. This filter discards reads that are too short or have too many poor incorporations or interruptions. A ÔdotÕ is an instance of three successive negative flows (no signal for three base flows, denoted at ÔNÕ). Discards reads with the last positive flow occurring at less than 84 flows (~30-50 bp). Also discards reads with more than $5\%$ of the flows before the last positive flow occurring as dots. (numDotFailed metric)
+
+\item \emph{Mixed Filter} Ð fails for reads with too many positive flows. This filter discards reads with too many nucleotide incorporations, possibly occurring from a bead carrying two or more DNA fragments attached, a well containing more than one DNA bead, signal contamination from a neighboring well or a low signal-to-noise ratio well. Discards a read if more than $70\%$ of the flows occurring before the last positive flow recorded a positive signal. Additionally, if the normalized flow signal value is between $0.45$ and $0.75$, it is considered ambiguous. If the read has more than $20\%$  ambiguous or less than $30\%$ unambiguous positive flows (either below $0.45$ or above $0.75$) the read is discarded. (numMixedFailed metric)
+
+\end{itemize}
+
+\subsection{Read Trimming Filters}
+
+After the read rejecting filters have been applied, the remaining reads are assessed for quality of the signal intensity information as a function of the nucleotide flow. Several chemical- and system-related effects can gradually degrade the signal of some wells over the sequencing run, towards the 3Õ end. The pipeline implements certain filters to trim back the reads from the 3Õ end which show borderline signal intensity values.
+
+Any trimmed read that is less than the minLength parameter described below (50) is rejected as too short.
+
+\begin{itemize}
+\item \emph{Signal Intensity Filter} Ð trims reads that lose signal ÔcrispnessÕ near the end, possibly from overall signal droop and/or CAFIE error accumulation that leads to a low signal-to- noise ratio. The 3Õ end of a read is trimmed such that $<3\%$ of the remaining flows have borderline intensity for incorporation ($0.5-0.7$ on a $0-1.0$ scale) (numTrimmedTooShortQuality metric)
+
+\item \emph{Primer Filter} Ð trims the end of a read when it matches a 454 Sequencing System Adaptor sequence. (numTrimmedTooShortPrimer metric)
+
+\item \emph{TrimBack Valley Filter} Ð Filters or trims reads with many off-peak signal intensities. A Valley flow is defined as an intermediate signal intensity, i.e., a signal intensity occurring in the valley between the peaks for 1-mer and 2-mer incorporations, or the 2-mer and 3- mer, etc. The signal distribution of all reads of the Run is used to define the peaks of the homopolymer incorporations relative to these, the valleys or borderline zones for classification of intermediate signals.
+
+\begin{itemize}
+\item A Valley filter is applied to discard a read if more than 4 borderline valley flows occur before the last trimmed or 320th flow. This removes reads with many homopolymer errors within the first 320 flows. (numTrimmedTooShortQuality metric)
+\item The TrimBack filter scans reads backwards from the end of the read and trims flows until the number of valley flows is $< 1.25\%$ (4 occurrences/ 320 flows). This trimming is used to retain the higher quality part of a read. (numTrimmedTooShortQuality metric)
+\end{itemize}
+
+\item \emph{Quality Score Trimmer} Ð The signal flowgrams of the reads are basecalled and quality scores for each base are calculated based on the signal properties relative to the statistical distributions of the Control DNA fragment signals. Then, starting at the 3Õ end of the read, a 10 base window is used to calculate and average base quality score and the Q20 test is applied (average base quality score $> 20$). Trimming back from the 3Õ end occurs until the 10-base window passes the Q20 test. (numTrimmedTooShortQuality metric)
+
+\end{itemize}
+
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{rrc|rc}
+  \hline
+region & 1 &	 & 2 & \\
+  \hline
+totalRawWells & 964851 && 716141 &\\
+totalKeyPass & 955377& & 698485 &\\
+percentKeyPass && 99.0\% & &97.5\% \\  
+   \hline
+\end{tabular}
+\caption{Total reads and key pass sequence statistics.}
+\label{table1}
+\end{center}
+\end{table}
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{rrc|rc}
+  \hline
+region & 1	 & & 2 & \\
+  \hline
+keySequence & CATG & &CATG & \\
+numKeyPass & 7140 & & 16788 & \\
+numDotFailed & 57 & 0.8\% & 154 & 1.0\%  \\
+numMixedFailed & 28 & 0.4\%  & 183 & 1.1\%  \\
+numTrimmedTooShortQuality & 165 & 2.3\%  & 462 & 2.8\%  \\
+numTrimmedTooShortPrimer &  0 & 0.0\% & 0 & 0.0\% \\
+totalPassedFiltering & 6890 & &15989 & \\
+percentPassedFiltering & &96.5\% && 95.2\%  \\
+   \hline
+\end{tabular}
+\caption{Spiked in control bead metrics. These beads are added to the emPCR sample during the sequencing bead preparation stage.}
+\label{table2}
+\end{center}
+\end{table}
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{rrc|rc}
+  \hline
+region & 1	 & & 2 & \\
+  \hline
+keySequence & TCAG & & TCAG & \\
+numKeyPass & 948237 & & 681697& \\
+numDotFailed & 28417 & 3.0\% & 22481 & 3.3\%\\
+numMixedFailed & 68205 & 7.2\% & 21340 & 3.1\%  \\
+numTrimmedTooShortQuality & 177185 & 18.7\% & 88598 & 13.0\% \\
+numTrimmedTooShortPrimer & 354 & 0.0\% & 561 &   0.0\% \\
+totalPassedFiltering & 674076 & & 548717 & \\
+percentPassedFiltering && 71.1\% && 80.5\%\\
+   \hline
+\end{tabular}
+\caption{DNA bead metrics. }
+\label{table3}
+\end{center}
+\end{table}
+
+%%% To add, a histogram of trim read lengths
+
+\subsection{Roche 454 Benchmarks}
+
+Below are common benchmarks used to determine whether a sequencing run meets expectations.
+
+\begin{itemize}
+    \item $1^{st}\%$ Benchmark: totalKeyPass/totalRawWells; $>90\%$
+        \begin{itemize}
+            \item The result from your run is 98.25\% .
+        \end{itemize}
+    \item $2^{nd}\%$ Benchmark: totalPassFiltering/totalKeyPass; $>50\%$
+     	\begin{itemize}
+	    \item The result from your run is 75.8\% .
+    	\end{itemize}
+    \item $3^{rd}\%$Benchmark: Average read length; $>300$ bp
+	\begin{itemize}
+	    \item The average read length from your run is 423.2 .
+        \end{itemize}
+    \item $4^{th}\%$ Benchmark: Number of total bases for a 2 region PTP; $>300$ million
+	\begin{itemize}
+	    \item The results from your run is 429 million bases.
+	\end{itemize}
+    \item $5^{th}\%$ Benchmark (unoffical): Mix+dot/totalKeyPass; $<20\%$
+        \begin{itemize}
+            \item The result from your run is 8.7\% .
+        \end{itemize}
+    \item $6^{th}\%$ Benchmark (unoffical): Total Reads or totalPassFiltering; \~1 million
+        \begin{itemize}
+            \item The results from your run is 1.66 Million bases.
+        \end{itemize}
+\end{itemize}
+
+
+%--------------------------------------------------
+\section{Visualization of quality data}
+%--------------------------------------------------
+
+Graphical representation of the data was designed to help identify irregularities in the data that may have arisen during sample preparation.  This package graphs characteristics like: read lengths, average quality for reads of the same length, quality across the reads, and pseudo-images of the plate.
+The first graph Fig 1~\ref{fig:01} is a distribution of read lengths.  The average read length of of the Roche GS FLX titanium series is around 400 bp.  However, the shape of the distribution and average read length will vary across experiments.  PCR Amplicons, for example, could have a much narrower distribution when compared to a genomic preparation, which contains many different DNA lengths.  The next two graphs Fig 2~\ref{fig:02} and Fig 3~\ref{fig:03} are concerned with quality at each bp or averaged across the entire read.  Fig 2~\ref{fig:02} shows all the reads aligned and then at each position their quality scores were averaged.  Sudden drops    
+
+\begin{figure}
+\begin{center}
+@QAPLOTS@
+\label{fig:01}
+\caption{Distribution for all reads in the 454 run.}
+\end{center}
+\end{figure} 
+
+\begin{figure}
+\begin{center}
+@readDist@
+\label{fig:01}
+\caption{Distribution for all reads in the 454 run.}
+\end{center}
+\end{figure}       
+
+\begin{figure}
+\begin{center}
+@readDist@
+\label{fig:02}
+\caption{Average quality for all reads at each base position
+across read length. This figure is quality profile for all the reads,
+which gives insight into quality trends across the reads.}
+\end{center}
+\end{figure}     
+
+\begin{figure}
+\begin{center}
+@readDist@
+\label{fig:03}
+\caption{AQuality averaged across entire length of each read and
+subsequently averaged for those reads sharing the same length.
+This graph informs which product lengths result in the best aver
+age quality.
+}
+\end{center}
+\end{figure}     
+
+@TABLE1@
+
+ 
+
+
+\section{Acknowledgements}
+\label{sec:ack}
+
+This report was generated using version 0.1.0 of the 
+\Rpackage{roche454QAReport}, written by Zev Kronenberg and Matt Settles. 
+It uses functions from the \Rpackage{Biostrings} package
+written by Bioconductor Core Team and the \Rpackage{ShortRead} package, written
+by Martin Morgan, Michael Lawrence and Simon Anders.
+
+\section*{SessionInformation: }
+\begin{itemize}\raggedright
+  \item R version 2.11. Under development (unstable) (2010-03-24 r51385), \verb|x86_64-unknown-linux-gnu|
+  \item Locale: \verb|LC_CTYPE=en_CA.UTF-8|, \verb|LC_NUMERIC=C|, \verb|LC_TIME=en_CA.UTF-8|, \verb|LC_COLLATE=en_CA.UTF-8|, \verb|LC_MONETARY=C|, \verb|LC_MESSAGES=en_CA.UTF-8|, \verb|LC_PAPER=en_CA.UTF-8|, \verb|LC_NAME=C|, \verb|LC_ADDRESS=C|, \verb|LC_TELEPHONE=C|, \verb|LC_MEASUREMENT=en_CA.UTF-8|, \verb|LC_IDENTIFICATION=C|
+  \item Base packages: base, datasets, graphics, grDevices, methods, stats, utils
+  \item Other packages: Biobase~2.8.0, Biostrings~2.16.0, GenomicRanges~1.0.1, IRanges~1.6.0, lattice~0.18-5,~roche454QAReport~0.1.0, Rsamtools~1.0.0, ShortRead~1.6.0,~xtable 1.5-6
+\end{itemize}
+
+\bibliographystyle{plain}
+\bibliography{454}
+
+
+\end{document}

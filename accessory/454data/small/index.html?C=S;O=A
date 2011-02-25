@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /Rcode/SharedDocs/454data</title>
+ </head>
+ <body>
+<h1>Index of /Rcode/SharedDocs/454data</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/Rcode/SharedDocs/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="1.TCA.454Reads.fna">1.TCA.454Reads.fna</a></td><td align="right">25-Jan-2010 12:10  </td><td align="right">244M</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="1.TCA.454Reads.fna.log">1.TCA.454Reads.fna.log</a></td><td align="right">25-Jan-2010 12:10  </td><td align="right"> 83 </td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="1.TCA.454Reads.fna.screen">1.TCA.454Reads.fna.screen</a></td><td align="right">25-Jan-2010 12:10  </td><td align="right">245M</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="1.TCA.454Reads.qual">1.TCA.454Reads.qual</a></td><td align="right">25-Jan-2010 12:10  </td><td align="right">661M</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="2.TCA.454Reads.fna">2.TCA.454Reads.fna</a></td><td align="right">25-Jan-2010 12:10  </td><td align="right">213M</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="2.TCA.454Reads.qual">2.TCA.454Reads.qual</a></td><td align="right">25-Jan-2010 12:10  </td><td align="right">569M</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="454AllControlMetrics.csv">454AllControlMetrics.csv</a></td><td align="right">25-Jan-2010 12:10  </td><td align="right">1.8K</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="454AllControlMetrics.txt">454AllControlMetrics.txt</a></td><td align="right">25-Jan-2010 12:10  </td><td align="right">3.8K</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="454BaseCallerMetrics.csv">454BaseCallerMetrics.csv</a></td><td align="right">25-Jan-2010 12:10  </td><td align="right"> 18K</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="454BaseCallerMetrics.txt">454BaseCallerMetrics.txt</a></td><td align="right">25-Jan-2010 12:10  </td><td align="right"> 57K</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="454DataProcessingDir.xml">454DataProcessingDir.xml</a></td><td align="right">25-Jan-2010 12:10  </td><td align="right">351 </td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="454QualityFilterMetrics.csv">454QualityFilterMetrics.csv</a></td><td align="right">25-Jan-2010 12:10  </td><td align="right">935 </td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="454QualityFilterMetrics.txt">454QualityFilterMetrics.txt</a></td><td align="right">25-Jan-2010 12:10  </td><td align="right">2.0K</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="454RuntimeMetricsAll.csv">454RuntimeMetricsAll.csv</a></td><td align="right">25-Jan-2010 12:10  </td><td align="right"> 16K</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="454RuntimeMetricsAll.txt">454RuntimeMetricsAll.txt</a></td><td align="right">25-Jan-2010 12:10  </td><td align="right"> 31K</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="dataRunParams.xml">dataRunParams.xml</a></td><td align="right">25-Jan-2010 12:10  </td><td align="right"> 10K</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gsRunProcessor.log">gsRunProcessor.log</a></td><td align="right">25-Jan-2010 12:10  </td><td align="right"> 10K</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gsRunProcessor_err.log">gsRunProcessor_err.log</a></td><td align="right">25-Jan-2010 12:10  </td><td align="right">583 </td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="screen.out">screen.out</a></td><td align="right">25-Jan-2010 12:10  </td><td align="right">393K</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.12 (Ubuntu) Server at bioinfo-mite.ibest.uidaho.edu Port 80</address>
+</body></html>

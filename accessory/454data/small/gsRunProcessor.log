@@ -1,0 +1,110 @@
+[Tue Dec 01 21:11:17 2009][Information][]	gsRunProcessor v2.3 Starting
+[Tue Dec 01 21:11:17 2009][Information][]	gsRunProcessor v2.3 Starting
+[Tue Dec 01 21:11:17 2009][Information][]	gsRunProcessor v2.3 Starting
+[Tue Dec 01 21:11:17 2009][Information][]	gsRunProcessor v2.3 Starting
+[Tue Dec 01 21:11:17 2009][Information][]	gsRunProcessor v2.3 Starting
+[Tue Dec 01 21:11:17 2009][Information][]	gsRunProcessor v2.3 Starting
+[Tue Dec 01 21:11:17 2009][Information][]	gsRunProcessor v2.3 Starting
+[Tue Dec 01 21:11:17 2009][Information][]	gsRunProcessor v2.3 Starting
+[Tue Dec 01 21:11:17 2009][Information][]	gsRunProcessor v2.3 Starting
+[Tue Dec 01 21:11:17 2009][Information][]	gsRunProcessor v2.3 Starting
+[Tue Dec 01 21:11:17 2009][Information][]	gsRunProcessor v2.3 Starting
+[Tue Dec 01 21:11:17 2009][Information][]	gsRunProcessor v2.3 Starting
+[Tue Dec 01 21:11:17 2009][Information][]	gsRunProcessor v2.3 Starting
+[Tue Dec 01 21:11:17 2009][Information][]	gsRunProcessor v2.3 Starting
+[Tue Dec 01 21:11:17 2009][Information][]	gsRunProcessor v2.3 Starting
+[Tue Dec 01 21:11:17 2009][Information][]	gsRunProcessor v2.3 Starting
+[Tue Dec 01 21:11:20 2009][Information][]	Detected processor speed: 2659 MHz.
+[Tue Dec 01 21:11:20 2009][Information][]	Detected system memory: 16432 megabytes.
+[Tue Dec 01 21:11:20 2009][Information][]	Allowing at most 2005 megabytes per process.
+[Tue Dec 01 21:11:20 2009][Notice][ProcessingEngine]	Starting job 1b8e322c-df01-11de-b4c2-00219b8bad97.
+[Tue Dec 01 21:11:20 2009][Information][ProcessingEngine]	Processing Group 1 : Creating output files.
+[Tue Dec 01 21:11:20 2009][Information][ProcessingEngine]	Processing Group 0 : Creating output files.
+[Tue Dec 01 21:11:20 2009][Information][ProcessingEngine]	Processing Group 0 : Loading data.
+[Tue Dec 01 21:11:20 2009][Information][ProcessingEngine]	Processing Group 1 : Loading data.
+[Tue Dec 01 21:11:20 2009][Information][ProcessingEngine]	Processing Group 1 : Done loading data for region(s): 2.
+[Tue Dec 01 21:11:20 2009][Information][ProcessingEngine]	Processing Group 0 : Done loading data for region(s): 1.
+[Tue Dec 01 21:11:20 2009][Notice][ProcessingEngine]	Region 2 : CameraClassifier starting.
+[Tue Dec 01 21:11:20 2009][Notice][ProcessingEngine]	Region 1 : CameraClassifier starting.
+[Tue Dec 01 21:11:24 2009][Notice][ProcessingEngine]	Region 1 : CameraClassifier finished.
+[Tue Dec 01 21:11:24 2009][Notice][ProcessingEngine]	Region 1 : WellFinder starting.
+[Tue Dec 01 21:11:24 2009][Notice][ProcessingEngine]	Region 2 : CameraClassifier finished.
+[Tue Dec 01 21:11:24 2009][Notice][ProcessingEngine]	Region 2 : WellFinder starting.
+[Tue Dec 01 21:12:35 2009][Information][WellFinder]	Region 2 : Found 836742 raw wells.
+[Tue Dec 01 21:12:35 2009][Information][WellFinder]	Region 1 : Found 842035 raw wells.
+[Tue Dec 01 21:12:35 2009][Notice][ProcessingEngine]	Region 2 : WellFinder finished.
+[Tue Dec 01 21:12:35 2009][Notice][ProcessingEngine]	Region 2 : WellBuilder starting.
+[Tue Dec 01 21:12:36 2009][Notice][ProcessingEngine]	Region 1 : WellFinder finished.
+[Tue Dec 01 21:12:36 2009][Notice][ProcessingEngine]	Region 1 : WellBuilder starting.
+[Tue Dec 01 21:14:36 2009][Information][WellBuilder]	Region 2 : 8442 control key pass, 814187 sample key pass.
+[Tue Dec 01 21:14:36 2009][Information][WellBuilder]	Region 1 : 10520 control key pass, 821443 sample key pass.
+[Tue Dec 01 22:25:07 2009][Notice][ProcessingEngine]	Region 2 : WellBuilder finished.
+[Tue Dec 01 22:25:07 2009][Notice][ProcessingEngine]	Region 2 : MetricsGenerator starting.
+[Tue Dec 01 22:25:07 2009][Notice][ProcessingEngine]	Region 1 : WellBuilder finished.
+[Tue Dec 01 22:25:07 2009][Notice][ProcessingEngine]	Region 1 : MetricsGenerator starting.
+[Tue Dec 01 22:25:07 2009][Notice][ProcessingEngine]	Region 1 : MetricsGenerator finished.
+[Tue Dec 01 22:25:07 2009][Notice][ProcessingEngine]	Region 2 : MetricsGenerator finished.
+[Tue Dec 01 22:25:07 2009][Notice][ProcessingEngine]	Region 1 : DataWriter starting.
+[Tue Dec 01 22:25:07 2009][Notice][ProcessingEngine]	Region 2 : DataWriter starting.
+[Tue Dec 01 22:28:55 2009][Warning][ProcessingEngine]	There was an error renaming the temporary CWF file to the final filename. File not found (Error:800040)
+[Tue Dec 01 22:28:56 2009][Notice][ProcessingEngine]	Region 1 : DataWriter finished.
+[Tue Dec 01 22:28:56 2009][Notice][ProcessingEngine]	Region 1 : NukeSignalStrengthBalancer Pass 1 starting.
+[Tue Dec 01 22:28:58 2009][Notice][ProcessingEngine]	Region 1 : NukeSignalStrengthBalancer Pass 1 finished.
+[Tue Dec 01 22:28:58 2009][Notice][ProcessingEngine]	Region 1 : BlowByCorrector starting.
+[Tue Dec 01 22:29:00 2009][Warning][ProcessingEngine]	There was an error renaming the temporary CWF file to the final filename. File not found (Error:800040)
+[Tue Dec 01 22:29:01 2009][Notice][ProcessingEngine]	Region 2 : DataWriter finished.
+[Tue Dec 01 22:29:01 2009][Notice][ProcessingEngine]	Region 2 : NukeSignalStrengthBalancer Pass 1 starting.
+[Tue Dec 01 22:29:03 2009][Notice][ProcessingEngine]	Region 2 : NukeSignalStrengthBalancer Pass 1 finished.
+[Tue Dec 01 22:29:03 2009][Notice][ProcessingEngine]	Region 2 : BlowByCorrector starting.
+[Tue Dec 01 22:32:18 2009][Notice][ProcessingEngine]	Region 1 : BlowByCorrector finished.
+[Tue Dec 01 22:32:18 2009][Notice][ProcessingEngine]	Region 1 : NucValveEventBalancer starting.
+[Tue Dec 01 22:32:21 2009][Notice][ProcessingEngine]	Region 2 : BlowByCorrector finished.
+[Tue Dec 01 22:32:21 2009][Notice][ProcessingEngine]	Region 2 : NucValveEventBalancer starting.
+[Tue Dec 01 22:32:24 2009][Notice][ProcessingEngine]	Region 1 : NucValveEventBalancer finished.
+[Tue Dec 01 22:32:24 2009][Notice][ProcessingEngine]	Region 1 : CafieCorrector starting.
+[Tue Dec 01 22:32:28 2009][Notice][ProcessingEngine]	Region 2 : NucValveEventBalancer finished.
+[Tue Dec 01 22:32:28 2009][Notice][ProcessingEngine]	Region 2 : CafieCorrector starting.
+[Wed Dec 02 01:37:18 2009][Notice][ProcessingEngine]	Region 2 : CafieCorrector finished.
+[Wed Dec 02 01:37:18 2009][Notice][ProcessingEngine]	Region 2 : NukeSignalStrengthBalancer Pass 2 starting.
+[Wed Dec 02 01:37:21 2009][Notice][ProcessingEngine]	Region 2 : NukeSignalStrengthBalancer Pass 2 finished.
+[Wed Dec 02 01:37:21 2009][Notice][ProcessingEngine]	Region 2 : MetricsGenerator starting.
+[Wed Dec 02 01:37:24 2009][Notice][ProcessingEngine]	Region 2 : MetricsGenerator finished.
+[Wed Dec 02 01:37:24 2009][Notice][ProcessingEngine]	Region 2 : IndividualWellScaler starting.
+[Wed Dec 02 01:37:52 2009][Notice][ProcessingEngine]	Region 2 : IndividualWellScaler finished.
+[Wed Dec 02 01:37:52 2009][Notice][ProcessingEngine]	Region 2 : MostLikelyErrorSubtractor starting.
+[Wed Dec 02 01:38:19 2009][Notice][ProcessingEngine]	Region 1 : CafieCorrector finished.
+[Wed Dec 02 01:38:19 2009][Notice][ProcessingEngine]	Region 1 : NukeSignalStrengthBalancer Pass 2 starting.
+[Wed Dec 02 01:38:21 2009][Notice][ProcessingEngine]	Region 1 : NukeSignalStrengthBalancer Pass 2 finished.
+[Wed Dec 02 01:38:21 2009][Notice][ProcessingEngine]	Region 1 : MetricsGenerator starting.
+[Wed Dec 02 01:38:24 2009][Notice][ProcessingEngine]	Region 1 : MetricsGenerator finished.
+[Wed Dec 02 01:38:24 2009][Notice][ProcessingEngine]	Region 1 : IndividualWellScaler starting.
+[Wed Dec 02 01:38:53 2009][Notice][ProcessingEngine]	Region 1 : IndividualWellScaler finished.
+[Wed Dec 02 01:38:53 2009][Notice][ProcessingEngine]	Region 1 : MostLikelyErrorSubtractor starting.
+[Wed Dec 02 01:42:08 2009][Notice][ProcessingEngine]	Region 2 : MostLikelyErrorSubtractor finished.
+[Wed Dec 02 01:42:08 2009][Notice][ProcessingEngine]	Region 2 : WellScreener Pass 1 starting.
+[Wed Dec 02 01:42:15 2009][Notice][ProcessingEngine]	Region 2 : WellScreener Pass 1 finished.
+[Wed Dec 02 01:42:15 2009][Notice][ProcessingEngine]	Region 2 : MetricsGenerator starting.
+[Wed Dec 02 01:43:00 2009][Notice][ProcessingEngine]	Region 1 : MostLikelyErrorSubtractor finished.
+[Wed Dec 02 01:43:00 2009][Notice][ProcessingEngine]	Region 1 : WellScreener Pass 1 starting.
+[Wed Dec 02 01:43:07 2009][Notice][ProcessingEngine]	Region 1 : WellScreener Pass 1 finished.
+[Wed Dec 02 01:43:07 2009][Notice][ProcessingEngine]	Region 1 : MetricsGenerator starting.
+[Wed Dec 02 01:43:13 2009][Notice][ProcessingEngine]	Region 2 : MetricsGenerator finished.
+[Wed Dec 02 01:43:13 2009][Notice][ProcessingEngine]	Region 2 : QualityFilter starting.
+[Wed Dec 02 01:44:03 2009][Notice][ProcessingEngine]	Region 2 : QualityFilter finished.
+[Wed Dec 02 01:44:03 2009][Notice][ProcessingEngine]	Region 2 : BaseCaller starting.
+[Wed Dec 02 01:44:08 2009][Notice][ProcessingEngine]	Region 1 : MetricsGenerator finished.
+[Wed Dec 02 01:44:08 2009][Notice][ProcessingEngine]	Region 1 : QualityFilter starting.
+[Wed Dec 02 01:45:01 2009][Notice][ProcessingEngine]	Region 1 : QualityFilter finished.
+[Wed Dec 02 01:45:01 2009][Notice][ProcessingEngine]	Region 1 : BaseCaller starting.
+[Wed Dec 02 01:59:55 2009][Notice][BaseCaller]	Region 2 : 895 reads were capped.
+[Wed Dec 02 01:59:59 2009][Notice][ProcessingEngine]	Region 2 : BaseCaller finished.
+[Wed Dec 02 01:59:59 2009][Notice][ProcessingEngine]	Region 2 : Processing complete. Writing results.
+[Wed Dec 02 02:03:08 2009][Notice][BaseCaller]	Region 1 : 1608 reads were capped.
+[Wed Dec 02 02:03:13 2009][Notice][ProcessingEngine]	Region 1 : BaseCaller finished.
+[Wed Dec 02 02:03:13 2009][Notice][ProcessingEngine]	Region 1 : Processing complete. Writing results.
+[Wed Dec 02 02:03:36 2009][Information][ProcessingEngine]	Processing Group 1 : Finished processing.  Waiting for other groups.
+[Wed Dec 02 02:06:30 2009][Information][ProcessingEngine]	Processing Group 0 : Finished processing.  Waiting for other groups.
+[Wed Dec 02 02:06:36 2009][Information][ProcessingEngine]	Generating output reports and requested legacy files.
+[Wed Dec 02 03:02:23 2009][Information][ProcessingEngine]	Done generating reports.
+[Wed Dec 02 03:02:23 2009][Warning][ProcessingEngine]	Cannot find the user provided post-analysis script: postAnalysisScript.sh. To remove this warning, either create a script or remove the reference to the script from the pipeline configuration file. (Error:800084)
+[Wed Dec 02 03:02:23 2009][Information][ProcessingEngine]	Job complete.

@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}The PHRED Quality score}{1}{section.1}
+\contentsline {section}{\numberline {2}The quality metrics recommended by Roche}{2}{section.2}
+\contentsline {section}{\numberline {3}The quality metrics recommended by Roche 454}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}Read rejecting filters}{3}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Read Trimming Filters}{3}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Roche 454 Benchmarks}{5}{subsection.3.3}
+\contentsline {section}{\numberline {4}Visualization of quality data}{6}{section.4}
+\contentsline {section}{\numberline {5}Acknowledgements}{7}{section.5}

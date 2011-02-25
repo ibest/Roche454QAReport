@@ -1,0 +1,56 @@
+\documentclass[11pt]{article}
+
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{amsmath} 
+\usepackage{underscore}
+
+\newcommand{\Rfunction}[1]{{\texttt{#1}}}
+\newcommand{\Robject}[1]{{\texttt{#1}}}
+\newcommand{\Rpackage}[1]{{\textsf{#1}}}
+\newcommand{\Rmethod}[1]{{\texttt{#1}}}
+\newcommand{\Rfunarg}[1]{{\texttt{#1}}}
+\newcommand{\Rclass}[1]{{\textit{#1}}}
+\DeclareGraphicsExtensions{.pdf}
+
+\begin{document}
+
+\title{Quality Report for Roche 454 Pyrosequencing Experiment 
+\\
+@repName@}
+
+\maketitle
+\tableofcontents
+
+\vspace{1.08cm}
+This is a quality assessment report for the dataset \textit{@repName@}.  
+The data are comprised of @numRegions@ regions.
+
+For details on the software packages that were used to produce this
+report see Section~\ref{sec:ack}.
+
+%------------------------------------------------------
+\section{The quality metrics recommended by Roche}
+%------------------------------------------------------
+
+blank section 1
+
+
+@TABLE1@
+
+@QAPLOTS@
+
+
+\section*{Acknowledgements}
+\label{sec:ack}
+
+This report was generated using version @rocheQAVer@ of the 
+\Rpackage{roche454QAReport}, written by Zev Kronenberg and Matt Settles,
+It uses functions from the \Rpackage{ShortRead} package
+written by Bioconductor Core Team. 
+\section*{SessionInformation: }
+@sessionInfo@
+
+\end{document}
