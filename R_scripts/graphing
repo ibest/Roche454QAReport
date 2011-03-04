@@ -1,3 +1,16 @@
+
+########### MATT
+sff_extract -Q FrogTrans.sff
+sff_extract FrogTrans.sff
+parseSFF_XML.pl -i FrogTrans.xml
+
+library(ShortRead)
+
+fq <- readFastq("FrogTrans.fastq")
+
+############################# 
+
+
 library(ShortRead)
 path<-RochePath(".")
 raw.data<-read454(path)
