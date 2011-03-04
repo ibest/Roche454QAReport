@@ -1,0 +1,45 @@
+This file describes the contents and functions of the script files located in this directory.
+
+required_for_heatmap:
+	This script has two system calls:
+		the first goes though and grabs the name seq name tag ">", and writes it to tmp.txt
+		the second calls a perlscript (parse.location.info.pl) to parse the tmp.tex pulling: sequence name, location, length, and score 
+		ggplot2 is then called to plot the data stored as variable "d"
+		the "m" variable is under development.  it will heat the plot by quality
+
+requied_for_plots:
+	This script has the meat of the Roche 454 package in it
+		the first couple lines read in the sequences and quality
+		the subsequent lines (this list is unordered)
+			get max read length	
+			get quality over read length
+			quality over bp
+			ect
+		this script is where the package spends most of its compute time
+
+quality_over_base_length_box = quality_over_length_box (sorry about that)
+	this script takes in avg.qual.tab from required_for_plots
+		the object contains the average quality of each read based on their length
+		the if else statements adds a factor vector that is used by ggplot as a break for each box (I AM SURE THERE IS A BETTER WAY)
+	the output is a boxplot that is broken on length of read.
+
+read_hist_base_length:
+	this script takes the object read.length.dataframe from required_for_plot
+	this outputs a histogram of read lengths 
+
+quality_box_plot:
+	takes in avg.qual.tab from required_for_plots
+	bins the avg read quality and then creates a boxplot
+
+read_length_hist_qual:
+	create a histogram of read lengths broken up into groups by quality
+
+read_hist:
+	create a plain old histogram of read lengths
+
+
+	
+
+		
+
+	
